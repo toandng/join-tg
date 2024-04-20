@@ -1,0 +1,349 @@
+*body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+header{
+    text-align: center;
+}
+
+/*..........thẻ nav......*/
+nav{
+    
+    background-color: black;
+
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li,a{
+    color: white;
+}
+nav ul li:nth-child(2) a{
+    color: yellow;
+}
+nav ul li:nth-child(3) input{
+ height: 17px;
+ border-radius: 5px;
+ 
+}
+nav ul li:nth-child(3)i{
+    position: absolute;
+    right: 12px;
+    color: #333;
+    line-height: 30px;
+    cursor: pointer;
+}
+nav ul li:nth-child(4) button{
+    height: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+nav ul li:nth-child(4) button:hover{
+    color: yellow;
+}
+nav ul li:nth-child(5):hover a{
+ color: yellow;
+}
+nav ul li:nth-child(6):hover a{
+    color: yellow;
+}
+nav ul li:nth-child(7):hover a{
+    color: yellow;
+}
+nav ul li:nth-child(8):hover a{
+    color: yellow;
+}
+nav ul li:nth-child(9):hover a{
+    color: yellow;
+}
+
+/*........thẻ section......*/
+.menu-bar{
+    background-color: #ffd400;
+    
+    border-radius: 5px 20px;
+}
+.menu-bar ul{
+display: flex;
+justify-content: space-between;
+
+}
+.menu-bar ul li a{
+    color: black;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu-bar ul li a i{
+    margin-right: 12px;
+    
+}
+.menu-bar ul li{
+    padding: 15px 6px;
+    transition: all 0.3 ease;
+}
+.menu-bar ul li:hover{
+    background-color: white;
+}
+.menu-bar ul li:nth-child(9){
+    position: relative;
+}
+.menu-bar ul li:nth-child(9)::before{
+    position: absolute;
+    content: "Giảm 5%";
+    height: 15px;
+    width: 45px;
+    display: block;
+    background-color: #f51212;
+    border-radius: 5px;
+    right: 0px;
+    top:0;
+    font-size: 10px;
+    padding-left: 3px;
+    color: #fff;
+}
+.menu-bar ul li:nth-child(9)::after{
+    position: absolute;
+    content: "";
+    background-color: #f51212;
+    height: 7px;
+    width: 7px;
+    display: block;
+    top:14px;
+    right: 10px;
+    z-index: 2;
+    transform: rotate(45deg);
+}
+/*......adress-form.......*/
+.adress-form{
+    position: fixed;
+    width: 100vh;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    top:0px;
+    left: 0px;
+    align-items: center;
+    display: none;
+    text-align: center;
+    justify-content: center;
+    z-index: 999;
+
+}
+.adress-form-content{
+    width: 400px;
+    height: 450x;
+    background-color: #333;
+    border-radius: 5px;
+}
+.adress-form-content form{
+    padding: 0px 40px;
+}
+.adress-form-content h2{
+        font-size: 14px;
+        padding: 12px 30px;
+        border: 1px solid yellow;
+        position: relative;
+}
+.adress-form-content h2 span{
+    display: block;
+    padding: 0px 6px;
+    position: absolute;
+    border: 1px solid yellow;
+    right: 0px;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 30px;
+}
+.adress-form-content p{
+    font-size: 16px;
+}
+.adress-form-content form input, select{
+    height: 40px;
+    display: block;
+    margin: 5px;
+    padding: 5px 0px;
+    border-radius: 3px;
+    
+}
+.adress-form-content form button{
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+    padding: 5px 8px;
+    outline: none;
+    border: none;
+    background-color: rgb(195, 149, 65);
+}
+.adress-form-content form button:hover{
+    background-color: rgb(89, 89, 139);
+}
+/*.................slider............*/
+
+.slider{
+    height: 65%;
+    width: 400px;
+
+}
+.slider-content{
+    align-items: center;
+    text-align: center;
+    margin: auto;
+
+}
+.slider-content-top{
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.slider-content-top img{
+    text-align: center;
+    height: 100%;
+    width: 350%;
+}
+.slider-content-bottem{
+    display: flex;
+    justify-content: space-between;
+}
+.slider-content-bottem img{
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px 10px;
+    height: 100%;
+   width: 600px;
+ 
+   text-align: center;
+   align-items: center;
+}
+.bottem-center{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #fff;
+    border-top: none;
+    height: 50px;
+    margin: 10px;
+    background-color: #f3f3f3;
+    
+}
+li{
+    list-style: none;
+}
+.bottem-center a{
+    color: #333;
+    
+}
+
+.bottem-center li{
+    width: 25%;
+    text-align: center;
+    cursor: pointer;
+    padding: 6px 0px;
+    height: 100%;
+    line-height: 38px;
+    border-radius: 10px;
+    margin: 10px;
+    position: relative;
+    border: 2px solid #fff;
+   
+    
+}
+/*.........test*/
+.container-top{
+    display: grid;
+    grid-template-columns: 360px 360px 360px;
+    color: black;
+    position: relative;
+}
+
+.container-top-left h1{
+    color: #00471b;
+    position: relative;
+    left: 90px;
+    bottom: 40px;
+}
+
+.container-top span{
+    color: #00471b;
+    font-size: 30px;
+    position: relative;
+    bottom: 40px;
+}
+.container-top p{
+    font-size: 14px;
+    position: relative;
+    bottom: 35px;
+    margin: 5px;
+}
+.container-top-left-1 img{
+    background-color: #00471b;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin: 50px 10px;
+    padding: 36px 32px 36px 32px;
+    gap: 10px;
+}
+.container-top-center h1{
+   color: #00471b;
+    position: relative;
+    bottom: 45px;
+    left: 35px;
+}
+.container-top-center span{
+    color: #00471b;
+    font-size: 30px;
+    position: relative;
+    left: 60px;
+    
+}
+.container-top-right h1{
+    color: #00471b;
+    position: relative;
+    bottom: 45px;
+    left: 90px;
+}
+.container-top-right span{
+    color: #00471b;
+    font-size: 30px;
+    position: relative;
+    left: 45px;
+}
+.container-top-center img{
+    background-color: #00471b;
+    border-radius: 50px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin: 50px 10px;
+    padding: 36px 32px 36px 32px;
+    gap: 10px;
+}
+.container-top-right img{
+    background-color: #00471b;
+    border-radius: 50px;
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    margin: 50px 10px;
+    padding: 36px;
+    gap: 10px;
+}
+
